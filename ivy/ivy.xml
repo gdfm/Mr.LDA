@@ -7,7 +7,7 @@
   </publications>
 
   <dependencies>
-    <dependency org="org.apache.hadoop" name="hadoop-core" rev="0.20.2-cdh3u1">
+    <dependency org="org.apache.hadoop" name="hadoop-client" rev="0.23.6" conf="*->default">
         <exclude name="ant"/>
         <exclude name="hadoop-ant"/>
     </dependency>
