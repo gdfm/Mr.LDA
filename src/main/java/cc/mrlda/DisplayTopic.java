@@ -101,7 +101,7 @@ public class DisplayTopic extends Configured implements Tool {
       System.exit(0);
     }
 
-    JobConf conf = new JobConf(DisplayTopic.class);
+    JobConf conf = new JobConf(getConf());
     FileSystem fs = FileSystem.get(conf);
 
     Path indexPath = new Path(indexString);

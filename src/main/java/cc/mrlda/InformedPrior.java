@@ -102,7 +102,7 @@ public class InformedPrior extends Configured implements Tool {
     }
 
     // Delete the output directory if it exists already
-    JobConf conf = new JobConf(InformedPrior.class);
+    JobConf conf = new JobConf(getConf());
     FileSystem fs = FileSystem.get(conf);
 
     Path inputPath = new Path(input);
